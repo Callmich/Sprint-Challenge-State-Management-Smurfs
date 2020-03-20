@@ -8,7 +8,9 @@ const SmurfVillage = props => {
       <div>
         {props.error ? (<div>{props.error}</div>): props.villageData.map(smurf => (
             <div>
-                <h5>Smurf! {smurf.name}</h5>
+                <h5>Name: {smurf.name}</h5>
+                <h5>Age: {smurf.age}</h5>
+                <h5>Height: {smurf.height}</h5>
             </div>))}
       </div>
     )
