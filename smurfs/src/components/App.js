@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
-class App extends Component {
-  render() {
+import SmurfHeader from './Header';
+import SmurfForm from './SmurfForm';
+import SmurfVillage from './Village';
+
+function App() {
+ 
     return (
       <div className="App">
-        <Header/>
+        <SmurfHeader/>
         <SmurfForm/>
-        <Village/>
+        <SmurfVillage/>
       </div>
     );
   }
-}
+
 
 export default App;

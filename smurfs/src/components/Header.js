@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { getData } from '../actions/smurfActions'
 
 //import action for getting data
 
