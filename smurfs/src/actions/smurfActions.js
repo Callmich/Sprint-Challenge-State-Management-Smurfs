@@ -3,6 +3,7 @@ import axios from 'axios';
 export const FETCH_DATA = 'FETCH_DATA';
 export const UPDATE_VILLAGE = "UPDATE_VILLAGE";
 export const SET_ERROR = 'SET_ERROR';
+export const NEW_SMURF = "NEW_SMURF";
 
 export const getData = () => dispatch => {
     dispatch({ type: FETCH_DATA });
@@ -17,3 +18,8 @@ export const getData = () => dispatch => {
             dispatch({ type: SET_ERROR, payload: "The Smurfs are hiding - check your AXIOS call"})
         })
 }
+
+// export const addToVillage = () => dispatch => {
+//     axios
+//       .post('http://localhost:3333/smurfs', )
+// }
