@@ -15,6 +15,12 @@ const SmurfForm = props => {
         console.log("New smurf info", newSmurf)
     }
 
+    const addSmurf = e => {
+        e.preventDefault();
+        setNewSmurf({...newSmurf, id: new Date()});
+        console.log("newSmurf on click", newSmurf)
+    }
+
 
     return (
         <div>
@@ -46,6 +52,7 @@ const SmurfForm = props => {
               onChange={handleChanges}
               placeholder="Height"
               />
+              <button onClick={ addSmurf }>Add Smurf!</button>
           </form>
         </div>
     )
