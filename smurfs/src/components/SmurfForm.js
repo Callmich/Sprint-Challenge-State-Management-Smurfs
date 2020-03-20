@@ -1,8 +1,8 @@
 import React, { useState}  from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios'
-export const UPDATE_VILLAGE = "UPDATE_VILLAGE";
-export const SET_ERROR = 'SET_ERROR';
+import { addBlue, SET_ERROR, UPDATE_VILLAGE} from '../actions/smurfActions'
+
 
 
 
@@ -72,7 +72,8 @@ const SmurfForm = props => {
               onChange={handleChanges}
               placeholder="Height"
               />
-              <button onClick={ addSmurf }>Add Smurf!</button>
+              <button onClick={addSmurf}>Add Smurf!</button>
+              {/* <button onClick={console.log(props.villageData)}>check console village!</button> */}
           </form>
         </div>
     )

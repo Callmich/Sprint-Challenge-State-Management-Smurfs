@@ -1,4 +1,4 @@
-import { FETCH_DATA, UPDATE_VILLAGE, SET_ERROR } from '../actions/smurfActions'
+import { FETCH_DATA, UPDATE_VILLAGE, SET_ERROR, ADD_BLUE} from '../actions/smurfActions'
 
 const initialState = {
     villageData: [],
@@ -25,6 +25,12 @@ export const smurfReducer = (state=initialState, action) => {
                 ...state,
                 isFetchingData: false,
                 error: action.payload
+            }
+        case ADD_BLUE:
+            // console.log("before add",villageData)
+            return{
+                ...state,
+                villageData: [...state, action.payload]
             }
             
         default:
